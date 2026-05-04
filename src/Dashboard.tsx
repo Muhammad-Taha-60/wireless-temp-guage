@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef, useCallback } from "react";
-import { createClient } from "@supabase/supabase-js/dist/common.js";
+import { createClient } from "@supabase/supabase-js";
 import {
   LineChart,
   Line,
