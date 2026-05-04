@@ -171,10 +171,9 @@ interface HeroCardProps {
   value: string;
   sub: string;
   accent: string;
-  accentDim: string;
   icon: string;
 }
-function HeroCard({ label, value, sub, accent, accentDim, icon }: HeroCardProps) {
+function HeroCard({ label, value, sub, accent, icon }: HeroCardProps) {
   return (
     <div
       style={{
@@ -565,7 +564,6 @@ export default function Dashboard() {
             value={latest ? `${T.toFixed(1)}°C` : "—"}
             sub={`Updated ${updatedAt}`}
             accent="#00D9A5"
-            accentDim="#0A4A3A"
             icon="🌡"
           />
           <HeroCard
@@ -573,7 +571,6 @@ export default function Dashboard() {
             value={latest ? `${Math.round(RH)}%` : "—"}
             sub="Relative humidity"
             accent="#7BB8FF"
-            accentDim="#0D2448"
             icon="💧"
           />
         </div>
