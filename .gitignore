@@ -1,0 +1,17 @@
+# Build and temporary files
+.pio/
+.pioenvs/
+.vscode/
+firmware/.pio/
+firmware/.vscode/
+firmware/.pioenvs/
+firmware/build/
+
+# Node modules and build output
+node_modules/
+dist/
+build/
+
+# Environment files and sensitive data
+.env
+.DS_Store
